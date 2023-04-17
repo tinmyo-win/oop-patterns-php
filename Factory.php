@@ -37,11 +37,11 @@ class CarFactory
 {
     private $options;
 
-    public function __construct($color, $doors)
+    public function __construct($color = null, $doors = null)
     {
         $options = new CarOptions();
-        $options->color = $color;
-        $options->doors = $doors;
+        $options->color = $color ?? $options->color;
+        $options->doors = $doors ?? $options->doors;
 
         $this->options = $options;
     }
