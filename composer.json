@@ -1,0 +1,17 @@
+{
+    "name": "admin-2023/oop-design-patterns",
+    "autoload": {
+        "psr-4": {
+            "Admin2023\\OopDesignPatterns\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tin Myo Win",
+            "email": "tinmyowin356@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+}
