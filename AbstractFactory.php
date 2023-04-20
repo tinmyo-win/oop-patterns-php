@@ -167,7 +167,7 @@ class Page
         echo "<pre>";
         echo htmlspecialchars($pageTemplate->getTemplateString());
         echo "</pre>";
-        
+
         return $renderer->render($pageTemplate->getTemplateString(), [
             'title' => $this->title,
             'content' => $this->content
@@ -179,6 +179,8 @@ $page = new Page('Sample page', 'This is the body.');
 
 echo "Testing actual rendering with the PHPTemplate factory:\n";
 echo $page->render(new PHPTemplateFactory());
+
+echo "---------------------------------------------------------------------------------------------";
 
 $page = new Page('Twig Sample page', 'This is the body.');
 echo "<br>Testing actual rendering with the TwigTemplate factory:\n";
